@@ -1,0 +1,25 @@
+<div class="row">
+<div class="gg">
+  <ul>
+    <li *ngFor="let fr of friends; let i=index">
+      <button type="button"  class="btn" (click)="deleteFriend(fr)" name="button">
+      {{i}} {{ fr.LastName }} ** {{ fr.FId }}
+      </button></li>
+</ul>
+</div>
+
+<h4> Formse </h4>
+<form #friendform="ngForm" id="friend" (ngSubmit)="addNewFriend()"  >
+  <input type="text" #Mission="ngModel" [(ngModel)]="friend.Mission" name="mission">
+    <input type="text" #LastName="ngModel" [(ngModel)]="friend.LastName" name="LastName">
+      <input type="text" #FerstName="ngModel" [(ngModel)]="friend.FerstName" name="FerstName">
+        <input type="text" #Address="ngModel" [(ngModel)]="friend.Address" name="address">
+          <input type="text" #City="ngModel" [(ngModel)]="friend.City" name="city">
+            <input type="text" #Tel="ngModel" [(ngModel)]="friend.Tel" name="tel">
+              <input type="text" #Fax="ngModel" [(ngModel)]="friend.Fax" name="fax">
+                <input type="text" #Email="ngModel" [(ngModel)]="friend.Email" name="email">
+
+                <button class="btn btn-primary"type="submit"> add</button>
+</form>
+
+</div>
