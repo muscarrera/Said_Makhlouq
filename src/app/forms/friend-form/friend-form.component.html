@@ -1,0 +1,124 @@
+<div class="form-template">
+  <h4> Formse </h4>
+<form #friendform="ngForm" id="friend" (ngSubmit)="addNewFriend()"  >
+
+  <input type="hidden" [(ngModel)]="friend.FId" name="mission">
+
+  <div class="form-group">
+    <div class="input-group">
+            <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i  class='fas fa-user-circle'
+          [ngClass]="{'red-icon':CardOwnerName.invalid}">ddd</i>
+        </div>
+      </div>
+      <input class="form-control"
+      #Mission="ngModel" [(ngModel)]="friend.Mission" name="mission"
+      placeholder="mission">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+        <i class="fas fa-users red"></i>
+        </div>
+      </div>
+      <input class="form-control"
+      #LastName="ngModel" [(ngModel)]="friend.LastName" name="LastName"
+      placeholder="Nom">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+            <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i  class='fas fa-user-circle'
+          [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+        </div>
+      </div>
+      <input class="form-control"
+      #FerstName="ngModel" [(ngModel)]="friend.FerstName" name="FerstName"
+      placeholder="Prenom">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+          <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i  class='fas fa-user-circle'
+          [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+        </div>
+      </div>
+      <input class="form-control"
+      #Address="ngModel" [(ngModel)]="friend.Address" name="address"
+      placeholder="Adresse">
+      </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i  class='fas fa-user-circle'
+          [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+        </div>
+      </div>
+      <input class="form-control"
+      #City="ngModel" [(ngModel)]="friend.City" name="city"
+      placeholder="Ville">
+      </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i  class='fas fa-user-circle'
+          [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+        </div>
+          </div>
+        <input class="form-control"
+        #Email="ngModel" [(ngModel)]="friend.Email" name="email"
+        placeholder="Email">
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text bg-white">
+            <i  class='fas fa-user-circle'
+            [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+          </div>
+        </div>
+        <input class="form-control"
+        #Tel="ngModel" [(ngModel)]="friend.Tel" name="tel"
+        placeholder="Tél">
+        </div>
+    </div>
+    <div class="form-group col-sm-6">
+      <div class="input-group">
+      <div class="input-group-prepend">
+          <div class="input-group-text bg-white">
+            <i  class='fas fa-user-circle'
+            [ngClass]="{'red-icon':CardOwnerName.invalid}"></i>
+          </div>
+          </div>
+          <input class="form-control"
+          #Fax="ngModel" [(ngModel)]="friend.Fax" name="fax"
+          placeholder="Fax">
+                </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-lg btn-block"type="submit">
+    <i  class="fas fa-user-circle">W</i>  Ajouter </button>
+</form>
+</div>

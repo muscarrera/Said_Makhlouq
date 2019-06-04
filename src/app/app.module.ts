@@ -12,6 +12,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FriendFormComponent } from './forms/friend-form/friend-form.component';
 
 const firebaseConfig = {
 apiKey: "AIzaSyAhqYWvmTByv_qivTH25Ma9fGb9V8nih_Q",
@@ -26,7 +27,8 @@ appId: "1:1058614087328:web:7d3a7734898d758b"
 @NgModule({
   declarations: [
     AppComponent,
-    FriendComponent
+    FriendComponent,
+    FriendFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  padding: 200px;
+}
+
+.form-template {
+  width: 50%;
+  margin: 20px auto;
+}

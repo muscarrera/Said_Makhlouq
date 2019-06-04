@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Friend } from 'src/app/shared/models/friend.model';
 import { FriendService } from 'src/app/shared/services/friend.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-friend',
